@@ -3,12 +3,13 @@ import 'package:flutter/widgets.dart';
 
 DeviceScreenType getDeviceType(MediaQueryData mediaQuery) {
   double deviceWidth = mediaQuery.size.shortestSide;
+  print(deviceWidth);
 
-  if (deviceWidth > 950) {
+  if (deviceWidth > 700) {
     return DeviceScreenType.desktop;
   }
 
-  if (deviceWidth > 600) {
+  if (deviceWidth > 500) {
     return DeviceScreenType.tablet;
   }
 
